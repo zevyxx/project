@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block konten %}
+    <h1>INPUT DATA komputer</h1>
+    <form action="/simpan" method="post" >
+        <input type="text" name="nama_komputer" placeholder="Enter nama_komputer" ><br>
+        <input type="text" name="cpu_komputer" placeholder="Enter cpu_komputer" ><br>
+        <input type ="text" name="rom_komputer" placeholder="Enter rom_komputer" ></textarea><br>
+        <button type="submit">KIRIM</button>
+    </form>
+{% endblock %}

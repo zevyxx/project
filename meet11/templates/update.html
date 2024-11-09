@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block konten %}
+    <h1>INPUT DATA TAHU</h1>
+    <form action="/aksiupdate" method="post" >
+        <input type="hidden" name="id_komputer" placeholder="Enter nama_komputer" value="{{ value[0] }}" >
+        <input type="text" name="nama_komputer" placeholder="Enter nama_komputer" value="{{ value[1] }}" ><br>
+        <input type="text" name="cpu_komputer" placeholder="Enter cpu_komputer" value="{{ value[2] }}"><br>
+        <input type="text" name="rom_komputer" placeholder="Enter rom_komputer" value="{{ value[3] }}"><br>
+
+        <button type="submit">KIRIM</button>
+    </form>
+{% endblock %}
